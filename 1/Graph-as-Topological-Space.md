@@ -50,9 +50,9 @@ $$
 \end{array}
 $$
 
-A set $X$ equipped with a topology $\tau$ is called a *topological space*. In addition, we say that a subset $U$ of $X$ is an *open set* of $X$ if $U$ belongs to $\tau$. [1]
+A set $$X$$ equipped with a topology $\tau$ is called a *topological space*. In addition, we say that a subset $U$ of $X$ is an *open set* of $X$ if $U$ belongs to $\tau$. [1]
 
-  Now, let $X$ be a discrete finite set. We define the topology $\tau$ as follows:
+  Now, let $$X$$ be a discrete finite set. We define the topology $$\tau$$ as follows:
 
 $$
 \tau = \{V|V\subset X\} \tag{2.4}

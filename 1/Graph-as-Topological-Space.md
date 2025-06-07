@@ -10,7 +10,7 @@
 
   Firstly, it’s important to understand what kind of structure a graph actually is. A graph $G$ is a mathematical structure composed of a vertex set $V$ and an edge set $E$. We typically express this as $G = (V, E)$. Vertices and edges are the fundamental units of a graph: a vertex represents a point in the graph, while an edge represents a connection between two vertices. More concretely, we can describe the elements of $V$ and $E$ as follows.
 
-$$u,v \in V, (u,v)\in E \tag{1.1}$$
+$u,v \in V$, $(u,v)\in E \tag{1.1}$
 
   If edges have weight,
 

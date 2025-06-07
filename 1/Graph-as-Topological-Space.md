@@ -10,11 +10,11 @@
 
   Firstly, it’s important to understand what kind of structure a graph actually is. A graph $G$ is a mathematical structure composed of a vertex set $V$ and an edge set $E$. We typically express this as $G = (V, E)$. Vertices and edges are the fundamental units of a graph: a vertex represents a point in the graph, while an edge represents a connection between two vertices. More concretely, we can describe the elements of $V$ and $E$ as follows.
 
-$u,v \in V$, $(u,v)\in E \tag{1.1}$
+$${u,v \in V, \left(u,v\right)\in E \tag{1.1}}$$
 
   If edges have weight,
 
-$$(u,v,w) \in E, w \in W \tag{1.2}$$
+$${(u,v,w) \in E, w \in W \tag{1.2}}$$
 
   The $W$ can be real numbers $\mathbb{R}$, or integers $\mathbb{Z}$, etc. Also, the edge $(u,v,w)$ and $(v,u,w)$ are considered equivalent. If a graph has duplicated edges, each edge can be represented in multiple ways.
 
@@ -26,7 +26,7 @@ Fig 1. Example of graph.
 
   The graph in fig 1 has 5 vertices and 6 edges. The vertex set and edge set is
 
-$$V = \{a,b,c,d,e\} \\ E=\{(a,b),(a,c),(a,d),(b,c),(b,d),(d,e)\}$$
+$${V = \{a,b,c,d,e\} \\ E=\{(a,b),(a,c),(a,d),(b,c),(b,d),(d,e)\}}$$
 
   
 
@@ -37,7 +37,7 @@ $$V = \{a,b,c,d,e\} \\ E=\{(a,b),(a,c),(a,d),(b,c),(b,d),(d,e)\}$$
   To take a topological perspective, we first need to understand the concepts of topology and topological spaces. A *topology* can be defined on a set $X$, but not every collection of subsets qualifies as a topology. In order for a collection to be considered a topology, it must satisfy the following three axioms:
 
 $$\begin{array}{rl}
-\text{2.1} & \empty \ \text{and} \ X \ \text{are\ in}\  \tau \\
+\text{2.1} & \emptyset \ \text{and} \ X \ \text{are\ in\  }\tau \\
 \text{2.2} & \text{The\ union\ of\ the\ elements\ of\ any\ finite\ subcollection\ of\ } \tau\ \text{is\ in\ } \tau \\
 \text{2.3} & \text{The\ intersection\ of\ the\ elements\ of\ any\ finite\ subcollection\ of\ } \tau\ \text{is\ in\ } \tau
 \end{array}$$
@@ -75,7 +75,7 @@ Let’s check whether this definition satisfies the three conditions. First, sin
   To define a topology on a graph $G$, we must first specify the underlying set $X$. Let us define $X$ as follows:
 
 $$
-X=\bigcup_{e_i \in E}I_i \tag{4.1}
+{X=\bigcup_{e_i \in E}I_i \tag{4.1}}
 $$
 
   Here, $I_i$ denotes the interval $[0, w_i]$ associated with the edge $e_i$, and all points on each interval are considered distinct, except at the endpoints corresponding to vertices. A point on $I_i$ is denoted by $(t,u)_i$, where $t \in [0, w_i]$, and $e_i=(u,v,w_i)$.
@@ -95,9 +95,9 @@ $$
 
 **First axiom, $2.1$:**
 
-  From the definition, $S$ includes $\empty$ and $X$, thus it satisfies axiom $2.1$.
+  From the definition, $S$ includes $\emptyset$ and $X$, thus it satisfies axiom $2.1$.
 
-By mathematical induction, it suffices to verify axioms $2.2$ and $2.3$ for the union and intersection of two sets. Specifically, if $U_1 \cap U_2 \in S$, $\forall U_1, U_2 \in S$, then it follows that $(U_1 \cap U_2) \cap U_3 \in S$, $\forall U_3 \in S$. A similar argument applies to the case of unions. Also, condition 1 concerns only the inclusion of $X$ and $\empty$ in the collection, so we do not need to check it when verifying axioms $2.2$ and $2.3$.
+By mathematical induction, it suffices to verify axioms $2.2$ and $2.3$ for the union and intersection of two sets. Specifically, if $U_1 \cap U_2 \in S$, $\forall U_1, U_2 \in S$, then it follows that $(U_1 \cap U_2) \cap U_3 \in S$, $\forall U_3 \in S$. A similar argument applies to the case of unions. Also, condition 1 concerns only the inclusion of $X$ and $\emptyset$ in the collection, so we do not need to check it when verifying axioms $2.2$ and $2.3$.
 
 **Second axiom, $2.2$:**
 

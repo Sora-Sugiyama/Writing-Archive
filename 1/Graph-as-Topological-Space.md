@@ -10,15 +10,11 @@
 
   Firstly, it’s important to understand what kind of structure a graph actually is. A graph $G$ is a mathematical structure composed of a vertex set $V$ and an edge set $E$. We typically express this as $G = (V, E)$. Vertices and edges are the fundamental units of a graph: a vertex represents a point in the graph, while an edge represents a connection between two vertices. More concretely, we can describe the elements of $V$ and $E$ as follows.
 
-$$
-u,v \in V, (u,v)\in E \tag{1.1}
-$$
+$$u,v \in V, (u,v)\in E \tag{1.1}$$
 
   If edges have weight,
 
-$$
-(u,v,w) \in E, w \in W \tag{1.2}
-$$
+$$(u,v,w) \in E, w \in W \tag{1.2}$$
 
   The $W$ can be real numbers $\mathbb{R}$, or integers $\mathbb{Z}$, etc. Also, the edge $(u,v,w)$ and $(v,u,w)$ are considered equivalent. If a graph has duplicated edges, each edge can be represented in multiple ways.
 
@@ -30,9 +26,7 @@ Fig 1. Example of graph.
 
   The graph in fig 1 has 5 vertices and 6 edges. The vertex set and edge set is
 
-$$
-V = \{a,b,c,d,e\} \\ E=\{(a,b),(a,c),(a,d),(b,c),(b,d),(d,e)\}
-$$
+$$V = \{a,b,c,d,e\} \\ E=\{(a,b),(a,c),(a,d),(b,c),(b,d),(d,e)\}$$
 
   
 
@@ -42,13 +36,11 @@ $$
 
   To take a topological perspective, we first need to understand the concepts of topology and topological spaces. A *topology* can be defined on a set $X$, but not every collection of subsets qualifies as a topology. In order for a collection to be considered a topology, it must satisfy the following three axioms:
 
-$$
-\begin{array}{rl}
+$$\begin{array}{rl}
 \text{2.1} & \empty \ \text{and} \ X \ \text{are\ in}\  \tau \\
 \text{2.2} & \text{The\ union\ of\ the\ elements\ of\ any\ finite\ subcollection\ of\ } \tau\ \text{is\ in\ } \tau \\
 \text{2.3} & \text{The\ intersection\ of\ the\ elements\ of\ any\ finite\ subcollection\ of\ } \tau\ \text{is\ in\ } \tau
-\end{array}
-$$
+\end{array}$$
 
 A set $$X$$ equipped with a topology $\tau$ is called a *topological space*. In addition, we say that a subset $U$ of $X$ is an *open set* of $X$ if $U$ belongs to $\tau$. [1]
 

@@ -26,7 +26,8 @@ Fig 1. Example of graph.
 
   The graph in fig 1 has 5 vertices and 6 edges. The vertex set and edge set is
 
-$${V = \{a,b,c,d,e\} \\ E=\{(a,b),(a,c),(a,d),(b,c),(b,d),(d,e)\}}$$
+$${V = \{a,b,c,d,e\}}$$
+$${E=\{(a,b),(a,c),(a,d),(b,c),(b,d),(d,e)\}}$$
 
   
 
@@ -46,9 +47,7 @@ A set $$X$$ equipped with a topology $\tau$ is called a *topological space*. In 
 
   Now, let $$X$$ be a discrete finite set. We define the topology $$\tau$$ as follows:
 
-$$
-\tau = \{V|V\subset X\} \tag{2.4}
-$$
+$$ {\tau = \{V|V\subset X\} }\tag{2.4} $$
 
 Let’s check whether this definition satisfies the three conditions. First, since $\emptyset \subset X$ and $X \subset X$, condition 2.1 is satisfied. Next, if $A, B \subset X$, then both $A \cup B$ and $A \cap B$ are also subsets of $X$. Therefore, any union or intersection of finite subcollections of $\tau$ is also in $\tau$, which means conditions 2.2 and 2.3 are satisfied.
 
